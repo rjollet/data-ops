@@ -20,6 +20,9 @@ For higher levels we are interested in seeing code that is:
 
 ---
 ## Data
+
+** PLEASE put the CSV mention below into the folder data/ **
+
 We provide some (fake) data to play with, that you will use in both challenges. You will work with cars, rentals and unavailabilities. You can download the CSV files here:
 
 - cars: https://cl.ly/eDaw
@@ -51,6 +54,9 @@ cars: all fields are clean except `created_at`, which can be `NULL`
 
 ----
 ## SQL challenge
+
+** The answer to this SQL challenge is in the folder SQL_challenge**
+
 Thanks to the provided CSV files, you will need to answer the following questions with SQL queries. We recommend that you use PostgreSQL as you may want to use window functions.
 
 1. Explain how you create tables and load data into these tables
