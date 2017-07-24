@@ -21,7 +21,7 @@ For higher levels we are interested in seeing code that is:
 ---
 ## Data
 
-** PLEASE put the CSV mention below into the folder data/ **
+**PLEASE put the CSV mention below into the folder data/**
 
 We provide some (fake) data to play with, that you will use in both challenges. You will work with cars, rentals and unavailabilities. You can download the CSV files here:
 
@@ -55,7 +55,7 @@ cars: all fields are clean except `created_at`, which can be `NULL`
 ----
 ## SQL challenge
 
-** The answer to this SQL challenge is in the folder SQL_challenge**
+**The answer to this SQL challenge is in the folder SQL_challenge**
 
 Thanks to the provided CSV files, you will need to answer the following questions with SQL queries. We recommend that you use PostgreSQL as you may want to use window functions.
 
@@ -70,6 +70,9 @@ Thanks to the provided CSV files, you will need to answer the following question
 
 ----
 ## Coding challenge
+
+**The answer to this Coding challenge is in the folder Coding_challenge**
+
 **General instructions**: For the different levels, you should use the provided CSV files and a dynamic language such as Python or Ruby. You should read the CSV files, do some processing as asked and then output back your results to a CSV file with the appropriate columns.
 
 **Goal:**

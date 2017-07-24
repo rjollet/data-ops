@@ -1,1 +1,4 @@
 data/*.csv
+Coding_challenge/output/*.csv
+__pycache__/
+.ipynb_checkpoints

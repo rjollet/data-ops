@@ -29,7 +29,7 @@ psql -h localhost -p 5432 -U squad --password
   psql -h localhost -p 5432 -U squad --password < 3_find_overlap.sql
   ```
 
-  **This SQL scipts (3_find_overlap.sql) returns the number of overlaps, it returns 0 so there is no overlaps.**
+  **This SQL scripts (3_find_overlap.sql) returns the number of overlaps, it returns 0 so there is no overlap.**
 
 1. Find the top 10 cities with the highest number of cars. Only display 10 rows
 
@@ -56,7 +56,7 @@ psql -h localhost -p 5432 -U squad --password
 
   **The SQL script is in 5_add_rental_duration.sql drops the column duration if already exists, add the column and update the column to add the computed duration.
 
-  to get the duration we get the number of second in the interval from starts_at to ends_at the we convert it in number of half day. we remove 1 half-days because the first period is 3 half day. then we divide by 2 and truncate in order to get the integer division. Finally we had one to get the duration value.**
+  to get the duration we get the number of second in the interval from starts_at to ends_at we convert it in the number of half days. we remove 1 half-days because the first period is 3 half day. then we divide by 2 and truncate in order to get the integer division. Finally, we had one to get the duration value.**
 
   ```
   psql -h localhost -p 5432 -U squad --password < 5_add_rental_duration.sql
@@ -67,9 +67,9 @@ psql -h localhost -p 5432 -U squad --password
     **Join Rentals and Cars On Rentals using Rentals.car_id = Cars.id, aggregate city year and month of starts_at and SUM duration columns.
     There are several biases:
     - duration is not exactly the number of days.
-    - if the rental starts_at at a month but ends_at another month the it will only count for the starts_at month.
+    - if the rental starts_at at a month but ends_at another month it will only count for the starts_at month.
 
-    A better way would be to from starts_at and ends_at to get the number of day in this interval per month.**
+    A better way would be to from starts_at and ends_at to get the number of days in this interval per month.**
 
   ```
   psql -h localhost -p 5432 -U squad --password < 6_city_monthly_rental_using_duration.sql
@@ -99,7 +99,7 @@ psql -h localhost -p 5432 -U squad --password
 
 1. For each month, find how many cars reach their 3rd rental. Use the starts_at to determine the month to attribute.
 
-  **with a sub-query that select the car that have been rented at least 3 time in a month then cont the number of car per month.**
+  **With a sub-query that select cars that have been rented at least 3 times in a month then count the number of cars per month.**
 
   ```
   psql -h localhost -p 5432 -U squad --password < 8_monthy_cars_reach_3_rentals.sql
